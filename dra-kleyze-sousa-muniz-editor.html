@@ -129,16 +129,38 @@
     nav.links-wrap {
       display: flex;
       align-items: center;
-      gap: 30px;
+      gap: 12px;
     }
-    nav.links-wrap a {
+    nav.links-wrap a:not(.btn) {
       color: var(--text-main);
       text-decoration: none;
-      font-size: 14px;
+      font-size: 14.5px;
       font-weight: 600;
-      transition: color 0.2s;
+      padding: 10px 16px;
+      border-radius: 12px;
+      position: relative;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    nav.links-wrap a:hover { color: var(--primary); }
+    nav.links-wrap a:not(.btn)::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+      width: 22px;
+      height: 2.5px;
+      background: var(--primary);
+      border-radius: 4px;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    nav.links-wrap a:not(.btn):hover {
+      color: var(--primary) !important;
+      background: var(--primary-soft);
+      transform: translateY(-1px);
+    }
+    nav.links-wrap a:not(.btn):hover::after {
+      transform: translateX(-50%) scaleX(1);
+    }
 
     /* Buttons */
     .btn {
