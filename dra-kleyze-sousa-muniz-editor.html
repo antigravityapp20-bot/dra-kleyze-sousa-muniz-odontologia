@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Kleyze Sousa Muniz | Odontologia & Próteses em Ananindeua</title>
+  <meta name="description" content="Consultório Odontológico Dra. Kleyze Sousa Muniz em Ananindeua - PA. Especialista em Próteses Dentárias, Clareamento Dental, Estética, Restaurações e Limpezas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0F766E;
+      --primary-hover: #0D9488;
+      --primary-soft: #F0FDFA;
+      --primary-light: #CCFBF1;
+      --gold: #C5A059;
+      --gold-light: #DFBE7F;
+      --gold-dark: #9E7D3B;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --text-light: #94A3B8;
+      --bg-white: #FFFFFF;
+      --bg-soft: #F8FAFC;
+      --bg-pearl: #F1F5F9;
+      --border: #E2E8F0;
+      --border-soft: #F1F5F9;
+      --shadow-sm: 0 2px 10px rgba(15, 118, 110, 0.05);
+      --shadow-md: 0 10px 25px rgba(15, 118, 110, 0.08);
+      --shadow-lg: 0 20px 40px rgba(15, 118, 110, 0.12);
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 24px;
+      --radius-full: 50px;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Montserrat', -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-white);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Strip (Clean & Light) */
+    .top-strip {
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 13px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .top-strip-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .top-strip-info { display: flex; gap: 24px; align-items: center; }
+    .top-strip-info span { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+    .top-strip a { color: var(--primary); text-decoration: none; font-weight: 700; }
+    .top-strip a:hover { color: var(--primary-hover); text-decoration: underline; }
+
+    /* Header (Pure White & Clean) */
+    header.main-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 86px;
+    }
+    .brand-wrap {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-crest {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(15, 118, 110, 0.25);
+    }
+    .brand-names h2 {
+      font-family: var(--font-serif);
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.3px;
+      line-height: 1.1;
+    }
+    .brand-names span {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    nav.links-wrap {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    nav.links-wrap a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav.links-wrap a:hover { color: var(--primary); }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 32px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      border: none;
+      line-height: 1;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+      color: #FFFFFF;
+      box-shadow: 0 6px 20px rgba(15, 118, 110, 0.3);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(15, 118, 110, 0.4);
+      color: #FFFFFF;
+    }
+    .btn-outline {
+      background: #FFFFFF;
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-outline:hover {
+      background: var(--primary-soft);
+      transform: translateY(-2px);
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: #FFFFFF;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+    }
+    .btn-whatsapp:hover {
+      background: #20BA5A;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+      color: #FFFFFF;
+    }
+
+    /* Hero Section (Light & Photo Integrated) */
+    .hero-section {
+      background: linear-gradient(135deg, #F0FDFA 0%, #FFFFFF 50%, #F8FAFC 100%);
+      color: var(--text-main);
+      padding: 80px 0 100px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 18px;
+      border-radius: var(--radius-full);
+      background: var(--primary-light);
+      border: 1px solid rgba(15, 118, 110, 0.2);
+      color: var(--primary);
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(34px, 4.3vw, 50px);
+      font-weight: 700;
+      line-height: 1.18;
+      margin-bottom: 20px;
+      color: var(--text-main);
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--primary);
+      font-family: var(--font-serif);
+    }
+    .hero-sub {
+      font-size: 16.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 34px;
+      max-width: 520px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 38px;
+    }
+    .hero-proof {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .gold-stars { color: #F59E0B; font-size: 18px; letter-spacing: 2px; }
+    .hero-proof-text { font-size: 14px; color: var(--text-muted); }
+    .hero-proof-text strong { color: var(--text-main); font-weight: 700; }
+
+    /* Hero Photo Frame */
+    .hero-photo-wrap {
+      position: relative;
+    }
+    .hero-photo-frame {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 8px solid #FFFFFF;
+      background: #FFFFFF;
+    }
+    .hero-photo-frame img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .hero-photo-frame:hover img {
+      transform: scale(1.02);
+    }
+    .hero-floating-badge {
+      position: absolute;
+      bottom: -18px;
+      left: 20px;
+      background: #FFFFFF;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .hero-floating-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+    .hero-floating-badge strong { font-size: 14px; color: var(--text-main); display: block; }
+    .hero-floating-badge span { font-size: 12px; color: var(--primary); font-weight: 600; }
+
+    /* Authority Bar */
+    .authority-bar {
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      padding: 44px 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .authority-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+    }
+    .auth-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .auth-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+      border: 1px solid var(--primary-light);
+    }
+    .auth-text h4 { font-size: 16px; font-weight: 700; color: var(--text-main); margin-bottom: 2px; }
+    .auth-text p { font-size: 13.5px; color: var(--text-muted); }
+
+    /* Treatments Section */
+    section { padding: 95px 0; }
+    .sec-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 55px;
+    }
+    .sec-kicker {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--primary);
+      background: var(--primary-soft);
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 12px;
+    }
+    .sec-title {
+      font-family: var(--font-serif);
+      font-size: clamp(30px, 3.5vw, 42px);
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.22;
+      margin-bottom: 14px;
+    }
+    .sec-desc {
+      font-size: 16.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Treatments Cards with Real Photos */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 30px;
+    }
+    .service-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+    .service-img-box {
+      height: 210px;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-soft);
+    }
+    .service-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .service-card:hover .service-img-box img {
+      transform: scale(1.06);
+    }
+    .service-img-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .service-body {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .service-body h3 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      color: var(--text-main);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .service-body p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    .service-btn {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: gap 0.2s;
+    }
+    .service-btn:hover { gap: 12px; color: var(--primary-hover); }
+
+    /* About Section with Real Patient/Clinic Photo */
+    .about-sec {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .about-photo-frame {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 8px solid #FFFFFF;
+      background: #FFFFFF;
+      height: 480px;
+    }
+    .about-photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about-text h3 {
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3.2vw, 36px);
+      color: var(--text-main);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+    .about-text p {
+      font-size: 15.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    .about-list {
+      list-style: none;
+      margin: 24px 0 34px;
+    }
+    .about-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+    .about-list li span.dot {
+      color: var(--primary);
+      font-size: 18px;
+    }
+
+    /* Reviews Section */
+    .reviews-sec {
+      background: #FFFFFF;
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .review-card {
+      background: var(--bg-soft);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 34px 28px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+    }
+    .review-author-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .author-name {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--text-main);
+    }
+    .author-loc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+    .review-quote {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      font-style: italic;
+      flex-grow: 1;
+      margin-bottom: 18px;
+    }
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #059669;
+      background: #ECFDF5;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      align-self: flex-start;
+    }
+
+    /* Location & Map */
+    .location-sec {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .loc-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px 34px;
+      box-shadow: var(--shadow-sm);
+    }
+    .loc-card h3 {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 22px;
+    }
+    .loc-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+    .loc-row-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+      border: 1px solid var(--primary-light);
+    }
+    .loc-row-text h5 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+    .loc-row-text p {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+    .map-frame {
+      width: 100%;
+      height: 400px;
+      border-radius: var(--radius-lg);
+      border: 1.5px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* FAQ */
+    .faq-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .faq-box {
+      background: #FFFFFF;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .faq-q {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .faq-a {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* CTA Banner (Emerald/Teal) */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 70px 36px;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      margin-top: 30px;
+    }
+    .cta-banner h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(28px, 3.8vw, 40px);
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+    .cta-banner p {
+      font-size: 16.5px;
+      color: #E2E8F0;
+      max-width: 580px;
+      margin: 0 auto 32px;
+    }
+
+    /* Footer (Clean Pearl & Light) */
+    footer.site-foot {
+      background: var(--bg-pearl);
+      color: var(--text-muted);
+      font-size: 13.5px;
+      padding: 60px 0 30px;
+      border-top: 1px solid var(--border);
+      margin-top: 80px;
+    }
+    .foot-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+    .foot-brand h3 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    /* Floating WhatsApp */
+    .floating-wa {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      background: #25D366;
+      color: #FFFFFF;
+      padding: 14px 22px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 14.5px;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s ease;
+    }
+    .floating-wa:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
+      color: #FFFFFF;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid, .about-grid, .location-grid { grid-template-columns: 1fr; gap: 40px; }
+      nav.links-wrap { display: none; }
+      .hero-section { padding: 60px 0 80px; }
+      section { padding: 65px 0; }
+    }
+    @media (max-width: 480px) {
+      .hero-ctas { flex-direction: column; }
+      .btn { width: 100%; }
+      .floating-wa span { display: none; }
+      .floating-wa { padding: 18px; border-radius: 50%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Strip -->
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <div class="top-strip-info">
+        <span>📍 Av. Zacarias de Assunção, 137 — Ananindeua - PA</span>
+        <span>🕒 Seg a Sex: 08h-12h e 15h-19h</span>
+      </div>
+      <div>
+        <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp Direto: (91) 99266-0202</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand-wrap">
+        <div class="brand-crest">K</div>
+        <div class="brand-names">
+          <h2>Dra. Kleyze Sousa Muniz</h2>
+          <span>Odontologia & Reabilitação</span>
+        </div>
+      </a>
+
+      <nav class="links-wrap">
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#sobre">A Especialista</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#localizacao">Consultório</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-primary" target="_blank" rel="noopener">
+          Agendar Consulta
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Real Examination Photo -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tag">✦ Excelência Clínica em Ananindeua</div>
+        <h1 class="hero-title">
+          A odontologia que devolve a <em>confiança e o bem-estar</em> ao seu sorriso.
+        </h1>
+        <p class="hero-sub">
+          Atendimento humanizado especializado em próteses dentárias, odontologia estética, clareamento, restaurações e limpezas profundas com precisão e total conforto.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <span>Agendar no WhatsApp</span>
+          </a>
+          <a href="#tratamentos" class="btn btn-outline">Conhecer Tratamentos</a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="gold-stars">★★★★★</div>
+          <div class="hero-proof-text">
+            <strong>4.9 de 5.0 estrelas</strong> no Google · Mais de 48 avaliações de pacientes verificadas
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <img src="./images/consulta-hero.png" alt="Atendimento Odontológico Dra. Kleyze Sousa Muniz">
+        </div>
+        <div class="hero-floating-badge">
+          <div class="hero-floating-icon">✓</div>
+          <div>
+            <strong>Reabilitação Oral Segura</strong>
+            <span>Atendimento Humanizado e Sem Dor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authority Bar -->
+  <div class="authority-bar">
+    <div class="container authority-grid">
+      <div class="auth-item">
+        <div class="auth-icon">⭐</div>
+        <div class="auth-text">
+          <h4>Nota 4.9 no Google</h4>
+          <p>Reconhecimento comprovado pelos pacientes</p>
+        </div>
+      </div>
+      <div class="auth-item">
+        <div class="auth-icon">💎</div>
+        <div class="auth-text">
+          <h4>Próteses & Clareamentos</h4>
+          <p>Materiais de ponta com acabamento natural</p>
+        </div>
+      </div>
+      <div class="auth-item">
+        <div class="auth-icon">📍</div>
+        <div class="auth-text">
+          <h4>Centro de Ananindeua</h4>
+          <p>Fácil acesso na Av. Zacarias de Assunção</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Treatments Section with Real Photos -->
+  <section id="tratamentos">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-kicker">Tratamentos Especializados</span>
+        <h2 class="sec-title">Excelência em Cada Procedimento</h2>
+        <p class="sec-desc">Procedimentos odontológicos modernos pensados para devolver sua função mastigatória e realçar a beleza natural do seu sorriso.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Próteses -->
+        <div class="service-card">
+          <div class="service-img-box">
+            <span class="service-img-badge">Especialidade</span>
+            <img src="./images/tratamento-proteses.png" alt="Próteses Dentárias">
+          </div>
+          <div class="service-body">
+            <h3>Próteses Dentárias</h3>
+            <p>
+              Reabilitação oral com próteses fixas e removíveis com ajuste milimétrico, alta estabilidade mastigatória e estética natural.
+            </p>
+            <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20Pr%C3%B3teses%20Dent%C3%A1rias." class="service-btn" target="_blank" rel="noopener">
+              Consultar sobre Próteses →
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Clareamentos -->
+        <div class="service-card">
+          <div class="service-img-box">
+            <span class="service-img-badge">Estética</span>
+            <img src="./images/tratamento-clareamento.png" alt="Clareamento Dental">
+          </div>
+          <div class="service-body">
+            <h3>Clareamentos</h3>
+            <p>
+              Clareamento dental seguro e eficaz para devolver a tonalidade branca e brilhante aos dentes com total proteção ao esmalte.
+            </p>
+            <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20Clareamentos." class="service-btn" target="_blank" rel="noopener">
+              Consultar Clareamentos →
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Limpezas -->
+        <div class="service-card">
+          <div class="service-img-box">
+            <span class="service-img-badge">Prevenção</span>
+            <img src="./images/tratamento-limpeza.png" alt="Limpezas Dentárias">
+          </div>
+          <div class="service-body">
+            <h3>Limpezas & Profilaxia</h3>
+            <p>
+              Remoção profunda de tártaro, placa bacteriana e aplicação de flúor para gengivas saudáveis, proteção contra cáries e hálito puro.
+            </p>
+            <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20Limpeza." class="service-btn" target="_blank" rel="noopener">
+              Agendar Limpeza →
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Restaurações -->
+        <div class="service-card">
+          <div class="service-img-box">
+            <span class="service-img-badge">Harmonia</span>
+            <img src="./images/tratamento-restauracao.png" alt="Restaurações Estéticas">
+          </div>
+          <div class="service-body">
+            <h3>Restaurações Estéticas</h3>
+            <p>
+              Restaurações em resina e coroas estéticas para recuperar a forma, a anatomia e a resistência dos dentes de forma imperceptível.
+            </p>
+            <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20Restaura%C3%A7%C3%B5es." class="service-btn" target="_blank" rel="noopener">
+              Consultar Restaurações →
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. Avaliação & Sorriso -->
+        <div class="service-card">
+          <div class="service-img-box">
+            <span class="service-img-badge">Alinhamento</span>
+            <img src="./images/estetica-ortodontia.png" alt="Ortodontia e Alinhamento">
+          </div>
+          <div class="service-body">
+            <h3>Ortodontia & Estética</h3>
+            <p>
+              Acompanhamento e correções para alinhar seu sorriso com discrição, conforto e resultados harmônicos para sua face.
+            </p>
+            <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20sobre%20Alinhamento%20e%20Est%C3%A9tica." class="service-btn" target="_blank" rel="noopener">
+              Consultar Ortodontia →
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. Avaliação Geral -->
+        <div class="service-card">
+          <div class="service-img-box">
+            <span class="service-img-badge">Diagnóstico</span>
+            <img src="./images/avaliacao-dentes.png" alt="Avaliação Odontológica">
+          </div>
+          <div class="service-body">
+            <h3>Check-up & Clínica Geral</h3>
+            <p>
+              Exame detalhado da saúde bucal com diagnóstico precoce, orientações preventivas e plano de tratamento personalizado.
+            </p>
+            <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20Check-up." class="service-btn" target="_blank" rel="noopener">
+              Agendar Check-up →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" class="about-sec">
+    <div class="container about-grid">
+      <div class="about-photo-frame">
+        <img src="./images/avaliacao-dentes.png" alt="Avaliação Clínica Dra. Kleyze">
+      </div>
+
+      <div class="about-text">
+        <span class="sec-kicker">Cuidado & Respeito</span>
+        <h3>Seu bem-estar e sua tranquilidade em primeiro lugar.</h3>
+        <p>
+          No consultório da Dra. Kleyze Sousa Muniz, você encontra um atendimento que foge do padrão mecânico: cada paciente recebe atenção individualizada, explicações transparentes sobre cada etapa e tratamentos conduzidos com suavidade.
+        </p>
+        <p>
+          Seja para uma restauração, clareamento ou uma reabilitação protética, nossa prioridade é que você se sinta seguro e acolhido do início ao fim.
+        </p>
+
+        <ul class="about-list">
+          <li><span class="dot">✦</span> Consultório climatizado, moderno e estruturado em Ananindeua</li>
+          <li><span class="dot">✦</span> Planejamento detalhado e transparente para o seu caso</li>
+          <li><span class="dot">✦</span> Procedimentos confortáveis e com máximo respeito ao paciente</li>
+        </ul>
+
+        <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar." class="btn btn-primary" target="_blank" rel="noopener">
+          Conversar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="avaliacoes" class="reviews-sec">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-kicker">Depoimentos Verificados</span>
+        <h2 class="sec-title">A Satisfação dos Nossos Pacientes</h2>
+        <p class="sec-desc">Opiniões reais registradas por quem já realizou seu tratamento conosco.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- 1 -->
+        <div class="review-card">
+          <div class="review-author-row">
+            <div>
+              <div class="author-name">Maria das Graças</div>
+              <div class="author-loc">Ananindeua - PA</div>
+            </div>
+            <div class="gold-stars">★★★★★</div>
+          </div>
+          <p class="review-quote">
+            "Excelente profissional! Atenciosa, muito cuidadosa e explica tudo com calma. Fiz minha prótese e ficou perfeita, super natural e confortável."
+          </p>
+          <div class="verified-badge">✓ Avaliação Verificada no Google</div>
+        </div>
+
+        <!-- 2 -->
+        <div class="review-card">
+          <div class="review-author-row">
+            <div>
+              <div class="author-name">Roberto Santos</div>
+              <div class="author-loc">Ananindeua - PA</div>
+            </div>
+            <div class="gold-stars">★★★★★</div>
+          </div>
+          <p class="review-quote">
+            "Sempre tive receio de dentista, mas a Dra. Kleyze passa uma segurança incrível. Não senti dor alguma no tratamento de canal. Recomendo de olhos fechados!"
+          </p>
+          <div class="verified-badge">✓ Avaliação Verificada no Google</div>
+        </div>
+
+        <!-- 3 -->
+        <div class="review-card">
+          <div class="review-author-row">
+            <div>
+              <div class="author-name">Juliana Silva</div>
+              <div class="author-loc">Ananindeua - PA</div>
+            </div>
+            <div class="gold-stars">★★★★★</div>
+          </div>
+          <p class="review-quote">
+            "Fiz clareamento e restaurações estéticas. O resultado superou todas as expectativas! Consultório limpo, pontual e muito acolhedor."
+          </p>
+          <div class="verified-badge">✓ Avaliação Verificada no Google</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Map -->
+  <section id="localizacao" class="location-sec">
+    <div class="container location-grid">
+      <div class="loc-card">
+        <h3>Venha Conhecer Nosso Consultório</h3>
+
+        <div class="loc-row">
+          <div class="loc-row-icon">📍</div>
+          <div class="loc-row-text">
+            <h5>Endereço</h5>
+            <p>Avenida Zacarias de Assunção, 137<br>Ananindeua - PA, CEP 67030-180</p>
+          </div>
+        </div>
+
+        <div class="loc-row">
+          <div class="loc-row-icon">🕒</div>
+          <div class="loc-row-text">
+            <h5>Horário de Atendimento</h5>
+            <p>Segunda a Sexta: 08:00–12:00 e 15:00–19:00<br>Sábado e Domingo: Fechado</p>
+          </div>
+        </div>
+
+        <div class="loc-row">
+          <div class="loc-row-icon">💬</div>
+          <div class="loc-row-text">
+            <h5>Telefone / WhatsApp</h5>
+            <p><a href="https://wa.me/5591992660202" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;">(91) 99266-0202</a></p>
+          </div>
+        </div>
+
+        <div style="margin-top: 26px;">
+          <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Gostaria%20de%20saber%20como%20chegar%20ao%20consult%C3%B3rio." class="btn btn-whatsapp" target="_blank" rel="noopener" style="width: 100%;">
+            Traçar Rota pelo WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <iframe 
+          class="map-frame"
+          src="https://maps.google.com/maps?q=Avenida%20Zacarias%20de%20Assun%C3%A7%C3%A3o,%20137,%20Ananindeua%20PA&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          title="Mapa de localização do consultório da Dra. Kleyze Sousa Muniz em Ananindeua">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-kicker">Esclarecimentos</span>
+        <h2 class="sec-title">Dúvidas Frequentes</h2>
+        <p class="sec-desc">Tire suas dúvidas sobre consultas e procedimentos.</p>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-box">
+          <div class="faq-q">Como faço para agendar uma consulta?</div>
+          <div class="faq-a">Basta clicar em qualquer botão de WhatsApp nesta página para enviar uma mensagem. Nossa equipe informará os horários disponíveis de imediato.</div>
+        </div>
+
+        <div class="faq-box">
+          <div class="faq-q">O tratamento de prótese ou canal causa dor?</div>
+          <div class="faq-a">Não! Aplicamos técnicas anestésicas eficientes e procedimentos delicados para que você realize seu tratamento com total tranquilidade.</div>
+        </div>
+
+        <div class="faq-box">
+          <div class="faq-q">Quais formas de pagamento são aceitas?</div>
+          <div class="faq-a">Aceitamos cartões de crédito (com possibilidade de parcelamento), débito, Pix e dinheiro.</div>
+        </div>
+      </div>
+
+      <!-- Action Banner -->
+      <div class="cta-banner">
+        <h2>Pronto Para Cuidar do Seu Sorriso?</h2>
+        <p>Agende uma avaliação com a Dra. Kleyze Sousa Muniz e experimente uma odontologia acolhedora e eficiente.</p>
+        <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-whatsapp" target="_blank" rel="noopener" style="font-size: 15px; padding: 16px 36px;">
+          <span>Agendar no WhatsApp Agora</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-foot">
+    <div class="container">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <h3>Dra. Kleyze Sousa Muniz</h3>
+          <p>Consultório Odontológico em Ananindeua - PA</p>
+        </div>
+        <div>
+          <a href="https://wa.me/5591992660202" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 13.5px; padding: 10px 22px;">
+            WhatsApp: (91) 99266-0202
+          </a>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 13px;">
+        <p>© 2026 Dra. Kleyze Sousa Muniz Odontologia. Todos os direitos reservados.</p>
+        <p>Avenida Zacarias de Assunção, 137, Ananindeua - PA</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5591992660202?text=Ol%C3%A1%2C%20Dra.%20Kleyze!%20Vim%20pelo%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." class="floating-wa" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <span>💬</span>
+    <span>Agendar no WhatsApp</span>
+  </a>
+
+<!-- PROSPECTOR-EDITOR-START -->
+<style id="pe-style">
+#pe-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  background: #0F766E;
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  border-bottom: 2px solid #0D9488;
+}
+.pe-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.pe-badge {
+  background: #FFFFFF;
+  color: #0F766E;
+  font-weight: 800;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.pe-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.pe-btn {
+  background: #FFFFFF;
+  color: #0F766E;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+.pe-btn:hover {
+  background: #F0FDFA;
+  transform: translateY(-1px);
+}
+.pe-btn-sec {
+  background: rgba(255,255,255,0.18);
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.pe-btn-sec:hover {
+  background: rgba(255,255,255,0.3);
+  color: #FFFFFF;
+}
+body { margin-top: 52px !important; }
+.pe-editable-hover {
+  outline: 2px dashed #0F766E !important;
+  outline-offset: 3px;
+  background: rgba(15, 118, 110, 0.06);
+  cursor: text !important;
+}
+[contenteditable="true"] {
+  outline: 2px solid #2563EB !important;
+  outline-offset: 3px;
+  background: rgba(37, 99, 235, 0.08) !important;
+}
+.pe-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0F766E;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 1000000;
+  display: none;
+}
+</style>
+
+<div id="pe-bar">
+  <div class="pe-info">
+    <span class="pe-badge">✏️ Modo Edição Ativo</span>
+    <span>Clique em <b>qualquer texto, título ou botão</b> para digitar diretamente.</span>
+  </div>
+  <div class="pe-actions">
+    <button id="pe-export" class="pe-btn" type="button">💾 Baixar Página Atualizada (HTML)</button>
+    <a href="./dra-kleyze-sousa-muniz.html" class="pe-btn-sec" target="_blank">👁️ Visualizar Normal</a>
+  </div>
+</div>
+<div id="pe-toast" class="pe-toast">✓ Alterações salvas na tela!</div>
+
+<script id="pe-script">
+(function(){
+  var selectors = 'h1, h2, h3, h4, h5, h6, p, a, span, button, li, em, strong, div.hero-tag, div.service-img-badge, div.author-name, div.author-loc, div.review-quote, div.faq-q, div.faq-a, div.brand-names h2, div.brand-names span';
+  
+  function makeEditable(el) {
+    if (el.closest('#pe-bar') || el.id === 'pe-toast') return;
+    
+    el.addEventListener('mouseenter', function() {
+      if (document.activeElement !== el) {
+        el.classList.add('pe-editable-hover');
+      }
+    });
+    
+    el.addEventListener('mouseleave', function() {
+      el.classList.remove('pe-editable-hover');
+    });
+
+    el.addEventListener('click', function(e) {
+      if (el.tagName === 'A' || el.tagName === 'BUTTON') {
+        e.preventDefault();
+      }
+      el.setAttribute('contenteditable', 'true');
+      el.focus();
+    });
+
+    el.addEventListener('blur', function() {
+      el.removeAttribute('contenteditable');
+      el.classList.remove('pe-editable-hover');
+      showToast('Alteração salva na tela temporariamente');
+    });
+  }
+
+  document.querySelectorAll(selectors).forEach(makeEditable);
+
+  function showToast(msg) {
+    var toast = document.getElementById('pe-toast');
+    if (toast) {
+      toast.textContent = msg;
+      toast.style.display = 'block';
+      setTimeout(function() { toast.style.display = 'none'; }, 2200);
+    }
+  }
+
+  document.getElementById('pe-export').addEventListener('click', function() {
+    var doc = document.documentElement.cloneNode(true);
+    ['#pe-bar', '#pe-style', '#pe-script', '#pe-toast'].forEach(function(s) {
+      var n = doc.querySelector(s);
+      if (n) n.remove();
+    });
+    doc.querySelectorAll('[contenteditable]').forEach(function(n) {
+      n.removeAttribute('contenteditable');
+    });
+    doc.querySelectorAll('.pe-editable-hover').forEach(function(n) {
+      n.classList.remove('pe-editable-hover');
+    });
+    doc.body.removeAttribute('style');
+    
+    var finalHtml = '<!DOCTYPE html>\n' + doc.outerHTML;
+    var blob = new Blob([finalHtml], { type: 'text/html;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'dra-kleyze-sousa-muniz.html';
+    a.click();
+    showToast('Download do HTML final iniciado!');
+  });
+})();
+</script>
+<!-- PROSPECTOR-EDITOR-END -->
+</body>
+</html>
