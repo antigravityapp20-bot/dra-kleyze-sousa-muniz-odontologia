@@ -157,36 +157,37 @@
       border: none;
       line-height: 1;
     }
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
-      color: #FFFFFF;
+    .btn-primary, a.btn-primary, nav.links-wrap a.btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%) !important;
+      color: #FFFFFF !important;
       box-shadow: 0 6px 20px rgba(15, 118, 110, 0.3);
     }
-    .btn-primary:hover {
+    .btn-primary:hover, a.btn-primary:hover, nav.links-wrap a.btn-primary:hover {
       transform: translateY(-2px);
       box-shadow: 0 10px 25px rgba(15, 118, 110, 0.4);
-      color: #FFFFFF;
+      color: #FFFFFF !important;
     }
-    .btn-outline {
-      background: #FFFFFF;
-      color: var(--primary);
+    .btn-outline, a.btn-outline {
+      background: #FFFFFF !important;
+      color: var(--primary) !important;
       border: 1.5px solid var(--primary);
       box-shadow: var(--shadow-sm);
     }
-    .btn-outline:hover {
-      background: var(--primary-soft);
+    .btn-outline:hover, a.btn-outline:hover {
+      background: var(--primary-soft) !important;
       transform: translateY(-2px);
+      color: var(--primary-hover) !important;
     }
-    .btn-whatsapp {
-      background: #25D366;
-      color: #FFFFFF;
+    .btn-whatsapp, a.btn-whatsapp, nav.links-wrap a.btn-whatsapp {
+      background: #25D366 !important;
+      color: #FFFFFF !important;
       box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
     }
-    .btn-whatsapp:hover {
-      background: #20BA5A;
+    .btn-whatsapp:hover, a.btn-whatsapp:hover, nav.links-wrap a.btn-whatsapp:hover {
+      background: #20BA5A !important;
       transform: translateY(-2px);
       box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
-      color: #FFFFFF;
+      color: #FFFFFF !important;
     }
 
     /* Hero Section (Light & Photo Integrated) */
