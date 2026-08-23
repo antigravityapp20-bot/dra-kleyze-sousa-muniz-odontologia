@@ -783,7 +783,66 @@
       opacity: 0 !important;
       pointer-events: none !important;
     }
+  
+    /* Bloqueio Total Netlify Widget */
+    netlify-drawer,
+    #netlify-drawer,
+    #netlify-drawer-container,
+    [data-netlify-drawer],
+    [class*="netlify"],
+    [id*="netlify"],
+    iframe[src*="netlify"],
+    a[href*="netlify.com"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      position: absolute !important;
+      left: -99999px !important;
+      top: -99999px !important;
+      z-index: -999999 !important;
+    }
+    .floating-wa {
+      z-index: 99999999 !important;
+    }
+
   </style>
+<script>
+  (function() {
+    function removeNetlifyElements() {
+      try {
+        var selectors = [
+          'netlify-drawer',
+          '#netlify-drawer',
+          '#netlify-drawer-container',
+          '[data-netlify-drawer]',
+          '[class*="netlify"]',
+          '[id*="netlify"]',
+          'iframe[src*="netlify"]',
+          'a[href*="netlify.com"]'
+        ];
+        document.querySelectorAll(selectors.join(',')).forEach(function(el) {
+          el.remove();
+        });
+        document.querySelectorAll('div, a, button, section, aside').forEach(function(el) {
+          if (el.innerText && el.innerText.indexOf('Powered by Netlify') !== -1) {
+            el.remove();
+          }
+        });
+      } catch(e) {}
+    }
+    removeNetlifyElements();
+    if (window.MutationObserver) {
+      var obs = new MutationObserver(removeNetlifyElements);
+      obs.observe(document.documentElement, { childList: true, subtree: true });
+    }
+    window.addEventListener('DOMContentLoaded', removeNetlifyElements);
+    window.addEventListener('load', removeNetlifyElements);
+  })();
+</script>
+
 </head>
 <body>
 
@@ -1308,7 +1367,32 @@ body { margin-top: 52px !important; }
   z-index: 1000000;
   display: none;
 }
-</style>
+
+    /* Bloqueio Total Netlify Widget */
+    netlify-drawer,
+    #netlify-drawer,
+    #netlify-drawer-container,
+    [data-netlify-drawer],
+    [class*="netlify"],
+    [id*="netlify"],
+    iframe[src*="netlify"],
+    a[href*="netlify.com"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      position: absolute !important;
+      left: -99999px !important;
+      top: -99999px !important;
+      z-index: -999999 !important;
+    }
+    .floating-wa {
+      z-index: 99999999 !important;
+    }
+
+  </style>
 
 <div id="pe-bar">
   <div class="pe-info">
