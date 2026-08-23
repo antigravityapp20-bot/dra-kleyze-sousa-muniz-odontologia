@@ -768,6 +768,21 @@
       .floating-wa span { display: none; }
       .floating-wa { padding: 18px; border-radius: 50%; }
     }
+
+    /* Ocultar Badge e Drawer do Netlify */
+    #netlify-drawer,
+    [data-netlify-drawer],
+    .netlify-drawer,
+    div[class*="netlify-drawer"],
+    div[id*="netlify"],
+    iframe[id*="netlify"],
+    iframe[src*="netlify"],
+    a[href*="netlify.com"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
   </style>
 </head>
 <body>
